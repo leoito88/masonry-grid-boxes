@@ -12,6 +12,7 @@ body{
     height: 100vh;
     font-family: 'SanFrancisco', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     letter-spacing: 0.05em;
+    gap: 50px;
 }
 
 /* Card 1 Social Start */
@@ -32,6 +33,7 @@ body{
 .social img{
     width: 17%;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .social h1{
@@ -77,6 +79,7 @@ body{
     padding: 10px;
     border-radius: 10px;
     margin-top: -4px;
+    transition: background-color 1s ease;
 }
 
 .title i:hover{
@@ -130,12 +133,14 @@ body{
     border-radius: 8px;
     font-weight: 600;
     font-size: 0.9em;
+    cursor: pointer;
 }
 
 
 hr{
-    margin-top: 15px;
-    border-top: 3px dashed rgb(231, 231, 231);
+    margin-top: 25px;
+    border: none;
+    border-top: 2px dashed rgb(231, 231, 231);
 }
 
 button{
@@ -148,6 +153,187 @@ button{
     font-size: 1.2em;
     font-weight: 400;
     margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: #3270dd;
 }
 
 /* Card 1 Social Ends */
+/* ------------------ */
+/* Card 2 Stats Start */
+
+.stats{
+    width: 300px;
+    /* height: 200px; */
+    color: #fff;
+    background-image: linear-gradient(180deg, #393939, #17181e);
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2), 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.stats h2{
+    margin: 0;
+    font-weight: 500;
+}
+
+select{
+    background-color: #424242;
+    color: #fff;
+    padding: 6px 0px 8px 8px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.earnings h5{
+    font-weight: 400;
+    margin: 15px 0 0px 0;
+    font-size: 0.9em;
+}
+
+.earnings h1{
+    font-weight: 600;
+    margin: 5px 0 0 0;
+    font-size: 3em;
+}
+
+.earnings h6{
+    font-weight: 300;
+    margin: 5px 0 0px 0;
+    font-size: 0.75em;
+}
+
+.earnings h1 span{
+    color: #6f6e6e;
+}
+
+.earnings h6 span{
+    color: #21cf3c;
+}
+
+.card-group-up{
+    display: flex;
+    gap: 10px;
+    margin: 0;
+}
+
+.projects ,.clients{
+    background-color: #3f3e3e;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 25px 0 10px 0;
+    width: 50%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2), 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.projects:hover ,.clients:hover{
+    background-color: #505050;
+    transition: background-color 1s ease;
+    cursor: pointer;
+}
+
+.projects h2, .clients h2{
+    font-weight: 500;
+    margin: 0 0;
+}
+
+.projects h2 span, .clients h2 span{
+    font-size: 0.7em;
+    padding-left: 5px;
+    color: #a2a2a2;
+    margin: 0 0 0 0;
+    font-weight: 500;
+}
+
+.projects h5 , .clients h5{
+    font-weight: 400;
+    margin: 8px 0 0 0;
+    font-size: 0.7em;
+    
+}
+
+.projects h5 span, .clients h5 span{
+    font-size: 0.9em;
+    padding-left: 1px;
+    margin: 0 0 0 0;
+    color: #a2a2a2;
+}
+
+.place{
+    background-color: #fff;
+    color: #000;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 7px 7px 0;
+    margin: 0 0;
+}
+
+.place:hover{
+    background-color: #dbd9f8;
+    transition: background-color 1s ease;
+    cursor: pointer;
+}
+
+.place-right, .place-left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.place-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.place-right img{
+    width: 100%;
+}
+
+.place-left h1{
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.place-left h5{
+    margin: 5px 0 0 0;
+    font-size: 0.7em;
+    color: #6f6e6e;
+    font-weight: 600;
+}
+
+.barra img{
+    width: 105%;
+    margin: -20px -8px -8px -8px;
+}
+
+.avail h5{
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+.avail h6{
+    font-weight: 500;
+    font-size: 0.7em;
+    margin: 10px 0 5px 0;
+    color: #a2a2a2;
+}
+
+/* Card 2 Stats Ends */
+/* ----------------- */
+/* Card 3 Join Now Starts */
+
+/* Card 3 Join Now Ends */
+/* ----------------- */
+/* Card 4 Income Starts */
+
+/* Card 4 Income Now Ends */
