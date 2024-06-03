@@ -8,6 +8,8 @@ https://dribbble.com/shots/24045722--ui-components-freelance-platform
 
 - El resultado fue el siguiente:
 
+![image](https://github.com/leoito88/masonry-grid-boxes/assets/59623841/ae22d046-c18f-4ce1-b0e7-1ea3a6b87f8f)
+
 
 Se Puede Visualizar la página en el siguiente link:
 https://leoito88.github.io/masonry-grid-boxes/
