@@ -7,12 +7,25 @@
 body{
     background-color: #efeeee;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    align-items: center;
+    gap: 20px;
+    /* height: 100vh; */
     font-family: 'SanFrancisco', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     letter-spacing: 0.05em;
-    gap: 50px;
+    margin: 20px;
+}
+
+.container{
+    margin: 0px auto;
+    columns: 2;
+    column-gap: 40px;
+}
+
+.social, .join-now, .stats, .income{
+    margin-bottom: 40px;
+    break-inside: avoid;
 }
 
 /* Card 1 Social Start */
@@ -42,8 +55,14 @@ body{
 }
 
 .social h2{
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
     font-size: 1.1em;
+    font-weight: 600;
+}
+
+.social h4{
+    margin: 0px;
+    padding: 0;
     font-weight: 600;
 }
 
@@ -125,13 +144,14 @@ body{
     align-items: left;
     margin: 0;
     padding: 0;
+    gap: 4px;
 }
 
 .tag{
     background-color: #dce5fc;
     padding: 4px;
     border-radius: 8px;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 0.9em;
     cursor: pointer;
 }
@@ -150,8 +170,8 @@ button{
     color: #fff;
     border-radius: 17px;
     border: none;
-    font-size: 1.2em;
-    font-weight: 400;
+    font-size: 1.1em;
+    font-weight: 200;
     margin-top: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -171,7 +191,7 @@ button:hover{
     color: #fff;
     background-image: linear-gradient(180deg, #393939, #17181e);
     border-radius: 25px;
-    padding: 20px;
+    padding: 15px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -189,6 +209,12 @@ select{
     padding: 6px 0px 8px 8px;
     border-radius: 10px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+
+select:hover{
+    background-color: #505050;
 }
 
 .earnings h5{
@@ -314,11 +340,13 @@ select{
 .barra img{
     width: 105%;
     margin: -20px -8px -8px -8px;
+    padding-right: -20px;
 }
 
 .avail h5{
     font-weight: 500;
     font-size: 0.9em;
+    margin-top: 30px;
 }
 
 .avail h6{
@@ -332,8 +360,198 @@ select{
 /* ----------------- */
 /* Card 3 Join Now Starts */
 
+.join-now{
+    background: linear-gradient(170deg, #fafafa 0%, rgb(236, 230, 236) 60%, rgba(222,187,222,1) 100%);
+    padding: 15px;
+    border-radius: 25px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2), 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.join-now img{
+    transition: scale 1s ease;
+}
+
+.join-now img:hover{
+    scale: 1.2;
+}
+
+.join-now h4{
+    text-align: center;
+    margin: 0px 0 0 0;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.join-now h5{
+    color: #6f6e6e;
+    font-size: 0.9em;
+    font-weight: 500;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.join-now button{
+    background-color: #000;
+    margin: 25px 0 0 0;
+    transition: background-color 1s ease;
+}
+
+.join-now button:hover{
+    background-color: #8b297a;
+}
+
+.join-now button h3{
+    margin: 0;
+    font-size: 1em;
+    font-weight: 200;
+}
+
 /* Card 3 Join Now Ends */
 /* ----------------- */
 /* Card 4 Income Starts */
 
+.income{
+    width: 300px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2), 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.income .tittle{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin: 0 0 25px 0;
+}
+
+.income select{
+    background-color: #f0f0f0;
+    color: #000;
+    cursor: pointer;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    border: none;
+    transition: background-color 1s ease;
+}
+
+.income select:hover{
+    background-color: #e6dcdc ;
+}
+
+.income h3{
+    margin: 0;
+}
+
+.income h4{
+    margin: 0;
+}
+
+.income h5{
+    margin: 0;
+    font-size: 1em;
+    font-weight: 500;
+    color: #6f6e6e;
+}
+
+.income .split{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    width: 100%;
+    margin: 15px 0 0 0;
+}
+
+.income .split-left{
+    width: 50%;
+    justify-content: left;
+}
+
+.income .split-ver{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+}
+
+.income .split-right{
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    gap: 3px;
+}
+
+.income .split-right .barblue-1,.barpink-1, .baryel-1, .barred-1{
+    padding: 5px;
+    height: 15px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.income .split-right .barblue-2,.barpink-2, .baryel-2, .barred-2{
+    padding: 5px;
+    height: 15px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.income .split-right .barblue-1{
+    background-color: #3c94f7;
+    width: 42%;
+}
+
+.split .barpink-1{
+    background-color: #ff91e0;
+    width: 42%;
+}
+
+.split .baryel-1{
+    background-color: #fdbd12;
+    width: 5%;
+}
+
+.split .barred-1{
+    background-color: #f76a37;
+    width: 10%;
+}
+
+
+.split .barblue-2{
+    background-color: #3c94f7;
+    width: 10%;
+}
+
+.split .barpink-2{
+    background-color: #ff91e0;
+    width: 50%;
+}
+
+.split .baryel-2{
+    background-color: #fdbd12;
+    width: 30%;
+}
+
+.split .barred-2{
+    background-color: #f76a37;
+    width: 1%;
+}
+
+
+.income hr{
+    margin: 20px 0 10px 0;
+    border: none;
+    border: 1px solid rgb(231, 231, 231);
+    width: 100%;
+}
 /* Card 4 Income Now Ends */
